@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alewife Autowerks homepage">
+    <title>Alewife Autowerks</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="images/favicon.webp" type="image/webp">
+    <style>
+        body {
+            overflow-y: scroll; /* Always show vertical scrollbar */
+        }
+    </style>
+    <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/contactform.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img src="images/image-1.webp" alt="logo" width="65" height="65" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                                        <li class="cs-li">
+                        <a href="services.html" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="about.html" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="contact.html" class="cs-li-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+
+ <!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-944">
+    <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+            <h2 class="cs-title">Alewife Autowerks</h2>
+            <p class="cs-text">
+                Your trusted partner for 20 years, Alewife Autowerks provides top-notch, guaranteed, and affordable auto repair services, leveraging state-of-the-art technology for all vehicle types, foreign and domestic.
+            <p class="cs-text">
+            </p>
+            <a class="cs-button-solid" aria-label="read more about our services" href="services.html">View All Services</a>
+        </div>
+        <!-- Right Image Section -->
+        <div class="cs-picture-group">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="images/hero-image.webp">
+                <source media="(min-width: 601px)" srcset="images/hero-image.webp">
+                <img decoding="async" src="images/hero-image.webp" alt="Alewife Automotive storefront" width="630" height="380" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="images/icon-inspection.webp" alt="car icon" width="40" height="40">
+            <h3 class="cs-h3">Vehicle Inspection</h3>
+            <p class="cs-item-text">
+                Covers all the features of your car that make it safe to drive on the road.
+            </p>
+            <!--Background Image-->
+            <picture class="cs-background">
+                <img loading="lazy" decoding="async" src="images/service-1.webp" alt="car inspection" width="480" height="425">
+            </picture>
+        </li>
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="images/icon-oil.webp" alt="oil icon" width="40" height="40">
+            <h3 class="cs-h3">Oil Change</h3>
+            <p class="cs-item-text">
+                Regular oil changes improve your engine's performance, significatnly extend its longevity, and help your car achieve its peak gas mileage.
+            </p>
+            <!--Background Image-->
+            <picture class="cs-background">
+                <img loading="lazy" decoding="async" src="images/service-2.webp" alt="oil change" width="480" height="425">
+            </picture>
+        </li>
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="images/icon-repair.webp" alt="wrench icon" width="40" height="40">
+            <h3 class="cs-h3">Vehicle Repairs</h3>
+            <p class="cs-item-text">
+                Your trusted solution for comprehensive vehicle repairs and maintenance, keeping you safe on the road.
+            </p>
+            <!--Background Image-->
+            <picture class="cs-background">
+                <img loading="lazy" decoding="async" src="images/service-3.webp" alt="repair" width="480" height="425">
+            </picture>
+        </li>
+    </ul>
+    <!--Divi Background-->
+    <picture class="cs-waves">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+    </picture>
+</section>
+<section id="cs-contact-486">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Talk to us.</h2>
+            <p class="cs-text">
+                We would love to hear about your auto needs and discuss how we can help. Please fill the form on the right so we can get in touch.
+            </p>
+            <a href="tel:219-555-4545" class="cs-link">(617) 776-7018</a>
+        </div>
+        <!--Form-->
+        <form id="cs-form" name="Contact Form" method="post" onsubmit="submitToAPI(event)">
+            <h3 class="cs-h3">Request a Quote</h3>
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-486" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-486" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-486" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                How can we help you?
+                <textarea class="cs-input-message" required type="text" placeholder="Your Message"></textarea>
+            </label>
+            <div class="g-recaptcha" data-sitekey="6LdVznApAAAAAMyv788c6zf7RG5qaOclPo6xqGgZ" class="form-control" style="width:100%;" data-callback="ccb" data-expired-callback="onExpired"></div>
+            <input type="hidden" id="recaptcha-response" name="recaptcha-response" />
+            <input type="hidden" id="destination" name="destination" value="alewifeauto@yahoo.com">
+            <script src="https://brokersites.s3.us-east-2.amazonaws.com/js/callback.js"> </script>
+           <button type="submit" disabled class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+<section id="cs-footer-271">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+                <!-- remove the light class if dark mdoe not needed-->
+                <img class="cs-logo light" aria-hidden="true" loading="lazy" decoding="async" src="images/Group 9.webp" alt="logo" width="240" height="32">
+            <p class="cs-text">
+                "Providing 20 years of affordable, fun, and efficient auto repair services in our advanced facility.".
+            </p>
+        </div>
+        <!-- Address Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+               33 Mystic Ave<br>Medford, MA 02155
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel: 617-776-7018">(617) 776-7018</a>
+            </li>
+
+        </ul>
+        <!-- Social and Credit -->
+        <div class="cs-bottom">
+            <span class="cs-copyright">© 2022 Copyright</span>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="https://www.yelp.com/biz/alewife-automotive-medford">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="images/yelp.svg" alt="google" width="11" height="11">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/scripts.js" ></script>
+<script src="https://brokersites.s3.us-east-2.amazonaws.com/js/loader.js"></script>       
+</body>
+</html>
+
